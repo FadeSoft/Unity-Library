@@ -10,5 +10,5 @@ LinkedIn: https://www.linkedin.com/in/samedbatman/
 <br>
 Mail: softwarefade@gmail.com
 <br>
-ALERT! You can use it for your own project.
+ALERT! You can use it for your own project without any permission.
 
