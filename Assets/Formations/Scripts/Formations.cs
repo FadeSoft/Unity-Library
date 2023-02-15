@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
  internal class Formations
 {
-    public List<Vector3> SquareFormation(float widht, float depth, bool isNoise)
+    internal List<Vector3> SquareFormation(float widht, float depth, bool isNoise)
     {
         List<Vector3> points = new List<Vector3>();
         Vector3 pos;
@@ -21,7 +21,7 @@ using UnityEngine;
         }
         return points;
     }
-    public List<Vector3> CubeFormation(int edgeLength, bool isNoise)
+    internal List<Vector3> CubeFormation(int edgeLength, bool isNoise)
     {
         List<Vector3> points = new List<Vector3>();
         Vector3 pos;
@@ -44,7 +44,7 @@ using UnityEngine;
         }
         return points;
     }
-    public List<Vector3> TrapezoidFormation(float widht, float depth, bool isNoise)
+    internal List<Vector3> TrapezoidFormation(float widht, float depth, bool isNoise)
     {
         List<Vector3> points = new List<Vector3>();
         Vector3 pos;
@@ -65,7 +65,7 @@ using UnityEngine;
         return points;
     }
 
-    public List<Vector3> PyramidFormation(float widht, float height, float depth, bool isNoise)
+    internal List<Vector3> PyramidFormation(float widht, float height, float depth, bool isNoise)
     {
         List<Vector3> points = new List<Vector3>();
         Vector3 pos;
@@ -90,7 +90,7 @@ using UnityEngine;
         return points;
     }
 
-    public List<Vector3> TriangleFormation(float widht, float depth, bool isNoise)
+    internal List<Vector3> TriangleFormation(float widht, float depth, bool isNoise)
     {
         List<Vector3> points = new List<Vector3>();
         Vector3 pos;
@@ -111,7 +111,7 @@ using UnityEngine;
         return points;
     }
 
-    public List<Vector3> TrianglePrismFormation(float widht, float height, float depth, bool isNoise)
+    internal List<Vector3> TrianglePrismFormation(float widht, float height, float depth, bool isNoise)
     {
         List<Vector3> points = new List<Vector3>();
         Vector3 pos;
@@ -136,7 +136,7 @@ using UnityEngine;
         return points;
     }
 
-    public (List<Vector3>, List<Quaternion>) Circle(float numberOfObjects, float radius, Vector3 circleCenter, bool isNoise)
+    internal (List<Vector3>, List<Quaternion>) Circle(float numberOfObjects, float radius, Vector3 circleCenter, bool isNoise)
     {
         List<Vector3> points = new List<Vector3>();
         List<Quaternion> rots = new List<Quaternion>();
@@ -160,7 +160,7 @@ using UnityEngine;
         return (points, rots);
     }
 
-    public (List<Vector3>, List<Quaternion>) Arena(float numberOfObjects, float height, float radius, Vector3 circleCenter, bool isNoise)
+    internal (List<Vector3>, List<Quaternion>) Arena(float numberOfObjects, float height, float radius, Vector3 circleCenter, bool isNoise)
     {
         List<Vector3> points = new List<Vector3>();
         List<Quaternion> rots = new List<Quaternion>();
@@ -188,7 +188,7 @@ using UnityEngine;
         return (points, rots);
     }
 
-    public List<Vector3> Sphere(float numberOfObjects, float height, float radius, Vector3 circleCenter, bool isNoise)
+    internal List<Vector3> Sphere(float numberOfObjects, float height, float radius, Vector3 circleCenter, bool isNoise)
     {
         List<Vector3> points = new List<Vector3>();
         Vector3 pos;
@@ -212,7 +212,7 @@ using UnityEngine;
         return points;
     }
 
-    public (List<Vector3>, List<Quaternion>) Cypiral(float numberOfObjects, float radius, Vector3 circleCenter, bool isNoise)
+    internal (List<Vector3>, List<Quaternion>) Cypiral(float numberOfObjects, float radius, Vector3 circleCenter, bool isNoise)
     {
         List<Vector3> points = new List<Vector3>();
         List<Quaternion> rots = new List<Quaternion>();
@@ -236,7 +236,7 @@ using UnityEngine;
         return (points, rots);
     }
 
-    public  (List<Vector3>, List<Quaternion>) Cylinder(float numberOfObjects, float radius, Vector3 circleCenter, bool isNoise)
+    internal (List<Vector3>, List<Quaternion>) Cylinder(float numberOfObjects, float radius, Vector3 circleCenter, bool isNoise)
     {
         List<Vector3> points = new List<Vector3>();
         List<Quaternion> rots = new List<Quaternion>();
@@ -262,7 +262,7 @@ using UnityEngine;
         }
         return (points, rots);
     }
-    public  Vector3 GetNoise(float noiseMultiplier)
+    internal Vector3 GetNoise(float noiseMultiplier)
     {
         float x = Random.Range(-noiseMultiplier, noiseMultiplier);
         return new Vector3(x, x, x);

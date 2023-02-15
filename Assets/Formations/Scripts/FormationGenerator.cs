@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class FormationGenerator : MonoBehaviour
 {
-    private Formations formations = new Formations();
+    private readonly Formations formations = new Formations();
     [SerializeField] private List<Vector3> points = new List<Vector3>();
     [SerializeField] private List<Quaternion> rots = new List<Quaternion>();
     public GameObject unit;
