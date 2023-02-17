@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 namespace Fade.Inputs.Swipe.WithMouse
 {
-    public class SwipeEvent : UnityEvent<Vector3> { }
+    [System.Serializable] public class SwipeEvent : UnityEvent<Vector3> { }
 
     public class SwipeWithMouse : MonoBehaviour
     {

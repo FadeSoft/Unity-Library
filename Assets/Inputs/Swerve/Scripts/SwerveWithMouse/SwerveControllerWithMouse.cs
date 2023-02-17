@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 namespace Fade.Inputs.Swerve.WithMouse
 {
-    public class SwerveEvent : UnityEvent<float> { }
+    [System.Serializable] public class SwerveEvent : UnityEvent<float> { }
 
     public class SwerveControllerWithMouse : MonoBehaviour
     {

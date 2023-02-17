@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 namespace Fade.Inputs.Swerve.WithTouch
 {
-    public class SwerveEvent : UnityEvent<float> { }
+    [System.Serializable]  public class SwerveEvent : UnityEvent<float> { }
 
     public class SwerveControllerWithTouch : MonoBehaviour
     {

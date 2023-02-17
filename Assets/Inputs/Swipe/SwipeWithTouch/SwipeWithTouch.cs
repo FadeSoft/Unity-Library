@@ -4,7 +4,7 @@ using UnityEngine.Events;
 //This class need Device Simulator to work on PC
 namespace Fade.Inputs.Swipe.WithTouch
 {
-    public class SwipeEvent : UnityEvent<Vector3> { }
+    [System.Serializable] public class SwipeEvent : UnityEvent<Vector3> { }
 
     public class SwipeWithTouch : MonoBehaviour
     {
@@ -20,7 +20,7 @@ namespace Fade.Inputs.Swipe.WithTouch
         }
         private void Swipe()
         {
-            if (Input.touchCount> 0)
+            if (Input.touchCount > 0)
             {
                 Touch t = Input.GetTouch(0);
                 if (t.phase == TouchPhase.Began)
