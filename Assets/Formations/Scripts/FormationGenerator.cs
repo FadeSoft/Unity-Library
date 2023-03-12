@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-
+using Fade.Formations;
 public class FormationGenerator : MonoBehaviour
 {
     private readonly Formations formations = new Formations();
@@ -12,7 +12,7 @@ public class FormationGenerator : MonoBehaviour
         Application.targetFrameRate = 60;
         (points, rots) = formations.Cylinder(20, 2, Vector3.zero, true);
         for (int i = 0; i < points.Count; i++)
-        {       
+        {
             Instantiate(unit, points[i], rots[i]);
         }
     }
