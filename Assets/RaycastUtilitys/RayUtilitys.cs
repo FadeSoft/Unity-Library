@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Fade.RayUtils
 {
-    internal class RayUtils : MonoBehaviour
+    internal class RayUtils
     {
         private RaycastHit hit;
         private readonly float range;
@@ -25,13 +25,13 @@ namespace Fade.RayUtils
                 return hit.point;
             else return playerPos;
         }
-        internal GameObject SelectObjectWithMouse(Vector3 mousePos, LayerMask layer)
+        internal T SelectObjectWithMouse<T>(Vector3 mousePos, LayerMask layer)
         {
             Ray ray = Camera.main.ScreenPointToRay(mousePos);
 
             if (Physics.Raycast(ray, out hit, range, layer))
-                return hit.transform.gameObject;
-            else return null;
+                return hit.transform.gameObject.GetComponent<T>();
+            else return default(T);
         }
     }
 }
