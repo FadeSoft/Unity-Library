@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 5
   rotationSpeed: 50
-  screenBorderPx: 20
+  screenBorderPx: 50
   minBorder: {x: -50, y: 0, z: -200}
   maxBorder: {x: 200, y: 0, z: 200}
   minZoomBorder: {x: 0, y: 2, z: -100}
