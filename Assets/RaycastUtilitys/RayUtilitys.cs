@@ -17,6 +17,14 @@ namespace Fade.RayUtils
                 return true;
             else return false;
         }
+        internal Vector3 GetMouseWorldPosition(Vector3 mousePos, Vector3 playerPos)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(mousePos);
+
+            if (Physics.Raycast(ray, out hit, range))
+                return hit.point;
+            else return playerPos;
+        }
         internal Vector3 GetMouseWorldPosition(Vector3 mousePos, Vector3 playerPos, LayerMask layer)
         {
             Ray ray = Camera.main.ScreenPointToRay(mousePos);
