@@ -12,7 +12,7 @@ public class RayUtilityExample : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0))
         {
             transform.position = rayUtility.GetMouseWorldPosition(Input.mousePosition, transform.position, 1 << 8);
-           MeshRenderer selectedObj = rayUtility.SelectObjectWithMouse<MeshRenderer>(Input.mousePosition, 1 << 8);
+            MeshRenderer selectedObj = rayUtility.SelectObjectWithMouse<MeshRenderer>(Input.mousePosition, 1 << 8);
         }
     }
 }

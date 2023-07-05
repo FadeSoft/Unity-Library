@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Fade.LevelManager
 {
-   public class LevelManager : MonoBehaviour
+    public class LevelManager : MonoBehaviour
     {
         public static LevelManager instance;
         public int levelNumber = 0;
